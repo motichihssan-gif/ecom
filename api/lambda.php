@@ -52,4 +52,4 @@ $response = $kernel->handle(
     $request = Request::capture()
 );
 
-return $response->getContent();
+echo $response->getContent();
