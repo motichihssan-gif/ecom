@@ -6,8 +6,8 @@
  "runtime": "vercel-php@0.7.4"
  }
  },
- "rewrites": [
- { "source": "/imgs/(.*)", "destination": "/imgs/$1" },
- { "source": "/(.*)", "destination": "/api/lambda.php" }
+ "routes": [
+ { "src": "/imgs/(.*)", "continue": true },
+ { "src": "/(.*)", "dest": "/api/lambda.php" }
  ]
 }
