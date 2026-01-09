@@ -7,6 +7,7 @@
  }
  },
  "rewrites": [
- { "source": "/((?!imgs/).*)", "destination": "/api/lambda.php" }
+ { "source": "/imgs/(.*)", "destination": "/imgs/$1" },
+ { "source": "/(.*)", "destination": "/api/lambda.php" }
  ]
 }
