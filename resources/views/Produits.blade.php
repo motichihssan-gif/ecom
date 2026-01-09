@@ -30,7 +30,7 @@
                             <td style="padding: 1rem;">{{ $product['nom'] }}</td>
                             <td style="padding: 1rem; font-weight: 600; color: var(--primary);">{{ $product['prix'] }}</td>
                             <td style="padding: 1rem;">
-                                <img src="{{ asset('imgs/' . $product['image']) }}" alt="{{ $product['nom'] }}" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px;">
+                                <img src="{{ '/imgs/' . $product['image'] }}" alt="{{ $product['nom'] }}" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px;">
                             </td>
                         </tr>
                     @endforeach
