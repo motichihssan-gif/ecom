@@ -30,13 +30,7 @@
                             <td style="padding: 1rem;">{{ $product['nom'] }}</td>
                             <td style="padding: 1rem; font-weight: 600; color: var(--primary);">{{ $product['prix'] }}</td>
                             <td style="padding: 1rem;">
-                                @if(file_exists(public_path('imgs/' . $product['image'])))
-                                    <img src="{{ asset('imgs/' . $product['image']) }}" alt="{{ $product['nom'] }}" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px;">
-                                @else
-                                    <div style="width: 80px; height: 60px; background: var(--gray); display: flex; align-items: center; justify-content: center; border-radius: 4px; color: var(--secondary);">
-                                        Image
-                                    </div>
-                                @endif
+                                <img src="{{ asset('imgs/' . $product['image']) }}" alt="{{ $product['nom'] }}" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px;">
                             </td>
                         </tr>
                     @endforeach
